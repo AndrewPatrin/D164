@@ -1,0 +1,20 @@
+{% extends 'flatpages/default.html' %}
+
+{% block content2 %}
+<li class="nav-item">
+  <a class="nav-link" href="/articles/search/">Articles Search</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/articles/create/">Create Article</a>
+</li>
+{% endblock content2 %}
+
+{% block content %}
+<h1>Create Article</h1>
+<hr>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Save" />
+</form>
+{% endblock content %}

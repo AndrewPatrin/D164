@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>
+            {%block title%}
+            Standard title
+            {%endblock title%}
+        </title>
+
+
+        <!-- Core theme CSS (includes Bootstrap)-->
+        {% load static %}
+        <link href="{% static 'css/styles.css' %}" rel="stylesheet" />
+    </head>
+    <body>
+        <!-- Responsive navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">BREAKING NEWS</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarResponsive"
+                        aria-controls="navbarResponsive" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        {% block view %}
+                        <li class="nav-item active">
+                            <a class="nav-link" href="/">All</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/news/">News</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/articles/">Articles</a>
+                        </li>
+                        {% endblock view %}
+                        {% block content2 %}
+
+                        {% endblock content2 %}
+                        {% block account %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="/account/">{{ request.user.username }} account</a>
+                        </li>
+                        {% endblock account %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="/admin/">Admin Panel</a>
+                        </li>
+                        {% block blogout %}
+                        <li class="nav-item">
+                            <a class="nav-link" href="/sign/logout/">Log Out</a>
+                        </li>
+                        {% endblock blogout %}
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Page Content-->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    {% block notification %}
+                    {% include 'notification/messaging.html' %}
+                    {% endblock notification %}
+                    {% block content %}
+                    {{ flatpage.content }}
+                    {% endblock content %}
+                    {% block content3 %}
+                    {% endblock content3 %}
+                    {% block sub %}
+                    {% endblock sub %}
+                </div>
+            </div>
+        </div>
+
+    </body>
+</html>

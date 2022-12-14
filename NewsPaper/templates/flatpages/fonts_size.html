@@ -1,0 +1,17 @@
+{% extends 'flatpages/default.html' %}
+
+{% block title %}
+{{ flatpage.title }}
+{% endblock title %}
+
+{% block content %}
+
+    <p style="font-family:Comic Sans MS;font-size:500%">
+        {{ flatpage.title }}
+    </p>
+    <hr>
+    <p style="font-family: fantasy;font-size:300%">
+        {{ flatpage.content }}
+    </p>
+
+{% endblock content %}

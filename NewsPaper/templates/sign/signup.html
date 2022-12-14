@@ -1,0 +1,55 @@
+{% extends "flatpages/default.html" %}
+{% block view %}
+<li class="nav-item">
+    <a class="nav-link" href="/sign/login/">Log in</a>
+</li>
+{% endblock view %}
+{% block account %}
+{% endblock account %}
+{% block blogout %}
+{% endblock blogout %}
+
+{% block content %}
+
+<form method="post">
+{% csrf_token %}
+    <p>
+        <table style="height: 273px; width: 346px;">
+            <tbody>
+                <tr>
+                    <td style="width: 146.562px; text-align: right;"></td>
+                    <td style="width: 181.438px;"><h3> Singup </h3></td>
+                </tr>
+                <tr>
+                    <td style="width: 146.562px; text-align: right;">username:</td>
+                    <td style="width: 181.438px;">{{ form.username }}</td>
+                </tr>
+                <tr>
+                    <td style="width: 146.562px; text-align: right;">first name:</td>
+                    <td style="width: 181.438px;">{{ form.first_name }}</td>
+                </tr>
+                <tr>
+                    <td style="width: 146.562px; text-align: right;">surname:</td>
+                    <td style="width: 181.438px;">{{ form.last_name }}</td>
+                </tr>
+                <tr>
+                    <td style="width: 146.562px; text-align: right;">email:</td>
+                    <td style="width: 181.438px;">{{ form.email }}</td>
+                </tr>
+                <tr>
+                    <td style="width: 146.562px; text-align: right;">password</td>
+                    <td style="width: 181.438px;">{{ form.password1 }}</td>
+                </tr>
+                <tr>
+                    <td style="width: 146.562px; text-align: right;">repeat password</td>
+                    <td style="width: 181.438px;">{{ form.password2 }}</td>
+                </tr>
+                <tr>
+                    <td style="width: 146.562px; text-align: right;"></td>
+                    <td style="width: 181.438px;"><input type="submit" value="Продолжить"></td>
+                </tr>
+            </tbody>
+        </table>
+    </p>
+</form>
+{% endblock %}

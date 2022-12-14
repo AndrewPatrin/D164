@@ -1,0 +1,101 @@
+2022-12-14 18:41:24,458 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 18:43:31,161 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 18:44:05,382 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\newsportal\views.py changed, reloading.
+2022-12-14 18:44:06,751 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 18:45:26,381 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\newsportal\views.py changed, reloading.
+2022-12-14 18:45:28,435 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 18:47:59,959 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 18:48:31,604 | ERROR | views | TEST
+2022-12-14 18:48:33,407 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 18:48:55,273 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\newsportal\views.py changed, reloading.
+2022-12-14 18:48:56,524 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 18:48:59,552 | ERROR | views | TEST
+2022-12-14 18:48:59,584 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 18:50:33,281 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\newsportal\views.py changed, reloading.
+2022-12-14 18:50:35,174 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 18:50:35,936 | INFO | views | Info Test
+2022-12-14 18:50:35,936 | WARNING | views | Warning Test
+2022-12-14 18:50:35,936 | ERROR | views | Error Test
+2022-12-14 18:50:35,937 | CRITICAL | views | Critical Test
+2022-12-14 18:50:35,968 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 18:51:04,958 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\newsportal\views.py changed, reloading.
+2022-12-14 18:51:07,137 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 18:51:07,993 | ERROR | views | Error Test
+2022-12-14 18:51:10,038 | CRITICAL | views | Critical Test
+2022-12-14 18:51:11,017 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 18:51:50,565 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
+2022-12-14 18:51:52,918 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 18:51:55,313 | ERROR | views | Error Test
+2022-12-14 18:51:57,784 | CRITICAL | views | Critical Test
+2022-12-14 18:51:59,241 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 18:53:30,903 | ERROR | views | Error Test
+2022-12-14 18:53:32,372 | CRITICAL | views | Critical Test
+2022-12-14 18:53:33,835 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 18:55:31,231 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\newsportal\views.py changed, reloading.
+2022-12-14 18:55:32,625 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 18:55:35,146 | CRITICAL | views | Critical Test
+2022-12-14 18:55:37,557 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 18:56:05,898 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 18:56:21,705 | ERROR | views | Error Test
+2022-12-14 18:56:23,923 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 18:57:29,088 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\newsportal\views.py changed, reloading.
+2022-12-14 18:57:30,413 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 18:57:36,214 | INFO | views | Info Test
+2022-12-14 18:57:36,214 | WARNING | views | Warning Test
+2022-12-14 18:57:36,214 | ERROR | views | Error Test
+2022-12-14 18:57:38,745 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 18:58:21,174 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\newsportal\views.py changed, reloading.
+2022-12-14 18:58:23,112 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 18:58:24,426 | INFO | views | Info Test
+2022-12-14 18:58:24,427 | WARNING | views | Warning Test
+2022-12-14 18:58:24,427 | ERROR | views | Error Test
+2022-12-14 18:58:24,449 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 18:59:47,240 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
+2022-12-14 19:04:40,146 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 19:05:04,811 | INFO | views | Info Test
+2022-12-14 19:05:04,811 | WARNING | views | Warning Test
+2022-12-14 19:05:04,811 | ERROR | views | Error Test
+2022-12-14 19:05:04,811 | CRITICAL | views | Critical Test
+2022-12-14 19:05:04,835 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 19:15:51,091 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\NewsPaper\settings.py changed, reloading.
+2022-12-14 21:13:56,691 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 21:13:58,949 | INFO | views | Info Test
+2022-12-14 21:13:58,949 | WARNING | views | Warning Test
+2022-12-14 21:13:58,949 | ERROR | views | Error Test
+2022-12-14 21:13:58,949 | CRITICAL | views | Critical Test
+2022-12-14 21:13:58,986 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 21:15:11,829 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\newsportal\views.py changed, reloading.
+2022-12-14 21:15:14,609 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 21:15:31,410 | INFO | views | Info Test
+2022-12-14 21:15:31,410 | WARNING | views | Warning Test
+2022-12-14 21:15:31,410 | ERROR | views | Error Test
+2022-12-14 21:15:31,411 | CRITICAL | views | Critical Test
+2022-12-14 21:15:31,440 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 21:23:23,996 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\newsportal\views.py changed, reloading.
+2022-12-14 21:23:25,651 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 21:23:26,319 | INFO | views | Info Test
+2022-12-14 21:23:26,319 | WARNING | views | Warning Test
+2022-12-14 21:23:26,319 | ERROR | views | Error Test
+2022-12-14 21:23:26,319 | CRITICAL | views | Critical Test
+2022-12-14 21:23:26,341 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 21:24:16,516 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\newsportal\views.py changed, reloading.
+2022-12-14 21:24:19,237 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 21:24:22,044 | INFO | views | Info Test
+2022-12-14 21:24:22,044 | WARNING | views | Warning Test
+2022-12-14 21:24:22,044 | ERROR | views | Error Test
+2022-12-14 21:24:22,045 | CRITICAL | views | Critical Test
+2022-12-14 21:24:22,068 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 21:25:13,972 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\newsportal\views.py changed, reloading.
+2022-12-14 21:25:15,670 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 21:25:16,424 | ERROR | views | Error Test
+2022-12-14 21:25:19,264 | CRITICAL | views | Critical Test
+2022-12-14 21:25:21,304 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 21:26:25,554 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\newsportal\views.py changed, reloading.
+2022-12-14 21:26:26,790 | INFO | autoreload | Watching for file changes with StatReloader
+2022-12-14 21:26:40,183 | INFO | views | Info Test
+2022-12-14 21:26:40,183 | WARNING | views | Warning Test
+2022-12-14 21:26:40,184 | ERROR | views | Error Test
+2022-12-14 21:26:42,490 | CRITICAL | views | Critical Test
+2022-12-14 21:26:44,374 | INFO | basehttp | "GET / HTTP/1.1" 200 4295
+2022-12-14 21:29:52,009 | INFO | autoreload | C:\Users\BudzzeM\PythonProjects\NewsPaper\NewsPaper\newsportal\views.py changed, reloading.
+2022-12-14 21:29:53,580 | INFO | autoreload | Watching for file changes with StatReloader

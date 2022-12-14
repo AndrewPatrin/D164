@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+{% extends 'posts.html' %}
+{% load custom_filters %}
+{% load custom_tags %}
+
+{% block title %}
+News
+{% endblock title %}
+
+{% block content2 %}
+<li class="nav-item">
+  <a class="nav-link" href="/news/search/">News Search</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/news/create/">Create News</a>
+</li>
+{% endblock content2 %}
+
+{% block content %}
+<h1>All news</h1>
+<h3>{% current_time '%d %b %Y - %H:%M:%S' %}</h3>
+
+<hr>
+   {% if posts %}
+       <table>
+           <tr>
+               <td><h3><span style="text-decoration: underline;"><strong>Title</strong></span></h3></td>
+               <td><h3><span style="text-decoration: underline;"><strong>Published Date</strong></span></h3></td>
+               <td><h3><span style="text-decoration: underline;"><strong>Preview</strong></span></h3></td>
+           </tr>
+
+           {% for post in posts %}
+           <tr>
+               <td><a class="nav-link" href="/news/{{post.pk}}">{{ post.post_title|censor }}</a></td>
+               <td>{{ post.published_date|date:'d M y' }}</td>
+               <td>{{ post.post_text|truncatewords:20|censor }}</td>
+               <td><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></td>
+
+           </tr>
+
+           {% endfor %}
+
+       </table>
+   {% else %}
+       <h2>Nothing here</h2>
+   {% endif %}
+
+{% endblock content %}

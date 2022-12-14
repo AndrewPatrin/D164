@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+{% extends 'post.html' %}
+{% load custom_filters %}
+
+{% block title %}
+Article
+{% endblock title %}
+
+{% block content2 %}
+<li class="nav-item">
+  <a class="nav-link" href="/articles/search/">Articles Search</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/articles/{{post.pk}}/edit">Article Edit</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/articles/{{post.pk}}/delete">Article Delete</a>
+</li>
+{% endblock content2 %}
+
+{% block content %}
+<h2>{{ post.post_title|censor }}</h2>
+<hr>
+<p style="text-align: left;"><em>{{ post.post_text|censor }}</em></p>
+<p style="text-align: right;"><em><strong>{{ post.published_date|date:'d M y' }},</strong></em></p>
+<p style="text-align: right;"><em><strong>{{ post.author.user.username }}</strong></em></p>
+{% endblock content %}

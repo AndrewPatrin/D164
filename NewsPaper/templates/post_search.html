@@ -1,0 +1,48 @@
+{% extends 'posts.html' %}
+{% load custom_filters %}
+{% load custom_tags %}
+
+{% block title %}
+Posts
+{% endblock title %}
+
+
+{% block content %}
+<h1>Search for all</h1>
+<h4>{% current_time '%d %b %Y - %H:%M:%S' %}</h4>
+
+   <form action="" method="get">
+       {{ filterset.form.as_p }}
+       <input type="submit" value="Найти" />
+
+   </form>
+
+<hr>
+   {% if posts %}
+       <table>
+           <tr>
+               <td><h3><span style="text-decoration: underline;"><strong>Title</strong></span></h3></td>
+               <td><h3><span style="text-decoration: underline;"><strong>Published Date</strong></span></h3></td>
+               <td><h3><span style="text-decoration: underline;"><strong>Preview</strong></span></h3></td>
+           </tr>
+
+           {% for post in posts %}
+           <tr>
+               {% if post.type == 'NW' %}
+               <td><a class="nav-link" href="/news/{{post.pk}}">{{ post.post_title|censor }}</a></td>
+               {% elif post.type == 'AR' %}
+               <td><a class="nav-link" href="/articles/{{post.pk}}">{{ post.post_title|censor }}</a></td>
+               {% endif %}
+               <td>{{ post.published_date|date:'d M y' }}</td>
+               <td>{{ post.post_text|truncatewords:20|censor }}</td>
+               <td><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></td>
+
+           </tr>
+
+           {% endfor %}
+
+       </table>
+   {% else %}
+       <h2>Nothing here</h2>
+   {% endif %}
+{% endblock content %}

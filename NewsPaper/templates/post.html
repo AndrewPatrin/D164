@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+{% extends 'flatpages/default.html' %}
+{% load custom_filters %}
+
+{% block title %}
+Post
+{% endblock title %}
+
+
+
+{% block content %}
+<h2>{{ post.post_title|censor }}</h2>
+<hr>
+<p style="text-align: left;"><em>{{ post.post_text|censor }}</em></p>
+<p style="text-align: right;"><em><strong>{{ post.published_date|date:'d M y' }},</strong></em></p>
+<p style="text-align: right;"><em><strong>{{ post.author.user.username }}</strong></em></p>
+{% endblock content%}
+
+{% block sub %}
+<h4>Subscribe to the category of the post to not to miss news on this topic</h4>
+
+{% for category in post.category.all %}
+{% if category not in request.user.category_set.all %}
+
+<form method="post" action="/subscribe/">
+    {% csrf_token %}
+    <input type="hidden" id="sub_category" name="sub_category" value="{{category}}">
+    <input type="hidden" id="rpath" name="rpath" value="{{request.path}}">
+    <input type="submit" value="Subscribe">to {{category}}
+</form>
+{% else %}
+Already subscribed to {{ category }}
+{% endif %}
+<br>
+{% endfor %}
+
+{% endblock sub %}
+
+

@@ -1,0 +1,15 @@
+version: "3"
+services:
+  postgres:
+    image: postgres:13.3
+    environment:
+      POSTGRES_DB: "newspaperdb"
+      POSTGRES_USER: "newspaperadmin"
+      POSTGRES_PASSWORD: "news"
+      PGDATA: "/var/lib/postgresql/data/pgdata"
+    volumes:
+      - .:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+volumes:
+  pgdata:

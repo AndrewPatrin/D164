@@ -1,0 +1,25 @@
+{% extends 'post_edit.html' %}
+
+{% block content2 %}
+<li class="nav-item">
+  <a class="nav-link" href="/articles/search/">Articles Search</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link" href="/articles/create/">Create Article</a>
+</li>
+{% endblock content2 %}
+
+{% block content %}
+{% if post.author == request.user.author %}
+<h1>EditArticle</h1>
+<hr>
+<form action="" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Save" />
+</form>
+{% else %}
+<h3>It's not your POST</h3>
+<h4>You can't edit or delete it</h4>
+{% endif %}
+{% endblock content %}

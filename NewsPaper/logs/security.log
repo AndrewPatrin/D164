@@ -1,0 +1,9 @@
+2022-12-14 18:48:59,552 | ERROR | views | TEST
+2022-12-14 18:50:35,936 | INFO | views | Info Test
+2022-12-14 18:50:35,936 | WARNING | views | Warning Test
+2022-12-14 18:50:35,936 | ERROR | views | Error Test
+2022-12-14 18:50:35,937 | CRITICAL | views | Critical Test
+2022-12-14 21:24:22,044 | INFO | views | Info Test
+2022-12-14 21:24:22,044 | WARNING | views | Warning Test
+2022-12-14 21:24:22,044 | ERROR | views | Error Test
+2022-12-14 21:24:22,045 | CRITICAL | views | Critical Test

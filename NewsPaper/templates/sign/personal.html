@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+{% extends 'flatpages/default.html' %}
+{% load custom_filters %}
+
+{% block title %}
+Personal information
+{% endblock title %}
+
+{% block content %}
+<h2>{{ post.post_title|censor }}</h2>
+<hr>
+<p style="text-align: left;"><em><strong>Username:</strong> {{ request.user.username }}</em></p>
+<p style="text-align: left;"><em><strong>First name:</strong> {{ request.user.first_name }}</em></p>
+<p style="text-align: left;"><em><strong>Surname:</strong> {{ request.user.last_name }}</em></p>
+<p style="text-align: left;"><em><strong>Email:</strong> {{ request.user.email }}</em></p>
+<p style="text-align: left;"><em><strong>Status</strong>:
+
+    {% if request.user|has_group:"author" %}
+    author
+    {% else %}
+    common
+    <a class="nav-link" href="/sign/promote/">Promote to author</a>
+    {% endif %}
+    </em></p>
+<p style="text-align: left;"><em><strong>Your subscriptions:</strong></em>
+{% if request.user.category_set.all %}
+{% for i in request.user.category_set.all %}
+'{{ i }}'
+{% endfor %} </p>
+{% else %}
+<p style="text-align: left;"><em>You are not subscribed to any of the categories yet.</em></p>
+{% endif %}
+
+{% endblock content%}
